@@ -15,7 +15,12 @@
         }
 
         static private function setController() : void {
-            self::$controller = "\Controllers\\" . array_shift(self::$url);
+            if( empty(self::$url) ) {
+                self::$controller = '\\Controllers\\homeController';
+                return;
+            }
+
+            self::$controller = "\\Controllers\\" . array_shift(self::$url) . 'Controller';
         }
 
         static private function setAction() : void {
