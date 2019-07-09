@@ -38,7 +38,7 @@
                 return;
             }
 
-            self::$params = array_shift(self::$url);
+            self::$params = self::$url;
         }
 
         static private function callController() : void {
