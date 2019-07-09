@@ -29,7 +29,7 @@
                 return;
             }
 
-            self::$currentAction = array_shift(self::$url);
+            self::$action = array_shift(self::$url);
         }
 
         static private function setParams() : void {
