@@ -36,7 +36,7 @@
             self::$params = array_shift(self::$url);
         }
 
-        static private function callController() {
+        static private function callController() : void {
             if( !class_exists(self::$controller) ) return;
 
             $controller = new self::$controller;
