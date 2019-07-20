@@ -5,7 +5,18 @@
         static private $url, $controller, $action, $params;
 
         static public function start() : void {
-            self::$url = !empty($_GET['q']) ? explode('/', $_GET['q']) : '';
+            global $router;
+
+            self::$url = isset($_GET['q']) ? '/' . $_GET['q'] : '/';
+
+            if( !$router->parser(self::$url) )
+                self::$url = '';
+                
+            if( !empty(self::$url) ) {
+                self::$url = explode('/', self::$url);
+                array_shift(self::$url);
+            }
+
 
             self::setController();
             self::setAction();
