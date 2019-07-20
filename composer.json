@@ -5,5 +5,9 @@
             "Controllers\\": "Controllers",
             "Models\\": "Models"
         }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "fanucchi/router": "dev-master"
     }
 }
