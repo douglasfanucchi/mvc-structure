@@ -1,4 +1,13 @@
 {
+    "name":"fanucchi/mvc",
+    "type":"project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name":"Douglas Fanucchi",
+            "email": "douglasfanucchi@gmail.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Core\\": "core",
