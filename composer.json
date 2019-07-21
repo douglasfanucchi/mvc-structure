@@ -2,6 +2,7 @@
     "name":"fanucchi/mvc",
     "type":"project",
     "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
             "name":"Douglas Fanucchi",
